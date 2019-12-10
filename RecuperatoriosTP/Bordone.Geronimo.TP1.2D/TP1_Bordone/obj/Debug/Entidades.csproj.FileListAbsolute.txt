@@ -1,0 +1,9 @@
+c:\users\admin\documents\visual studio 2017\Projects\TP1_Bordone\TP1_Bordone\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2017\Projects\TP1_Bordone\TP1_Bordone\obj\Debug\TP1_Bordone.FormCalculadora.resources
+c:\users\admin\documents\visual studio 2017\Projects\TP1_Bordone\TP1_Bordone\obj\Debug\TP1_Bordone.Properties.Resources.resources
+c:\users\admin\documents\visual studio 2017\Projects\TP1_Bordone\TP1_Bordone\obj\Debug\Entidades.csproj.GenerateResource.Cache
+c:\users\admin\documents\visual studio 2017\Projects\TP1_Bordone\TP1_Bordone\obj\Debug\TP1_Bordone.exe
+c:\users\admin\documents\visual studio 2017\Projects\TP1_Bordone\TP1_Bordone\obj\Debug\TP1_Bordone.pdb
+c:\users\admin\documents\visual studio 2017\Projects\TP1_Bordone\TP1_Bordone\bin\Debug\TP1_Bordone.exe.config
+c:\users\admin\documents\visual studio 2017\Projects\TP1_Bordone\TP1_Bordone\bin\Debug\TP1_Bordone.exe
+c:\users\admin\documents\visual studio 2017\Projects\TP1_Bordone\TP1_Bordone\bin\Debug\TP1_Bordone.pdb
