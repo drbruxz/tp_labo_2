@@ -1,0 +1,11 @@
+c:\users\admin\documents\visual studio 2017\Projects\Bordone.Geronimo.TP4.2D\MainCorreo\bin\Debug\MainCorreo.exe.config
+c:\users\admin\documents\visual studio 2017\Projects\Bordone.Geronimo.TP4.2D\MainCorreo\bin\Debug\MainCorreo.exe
+c:\users\admin\documents\visual studio 2017\Projects\Bordone.Geronimo.TP4.2D\MainCorreo\bin\Debug\MainCorreo.pdb
+c:\users\admin\documents\visual studio 2017\Projects\Bordone.Geronimo.TP4.2D\MainCorreo\obj\Debug\MainCorreo.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2017\Projects\Bordone.Geronimo.TP4.2D\MainCorreo\obj\Debug\MainCorreo.Form1.resources
+c:\users\admin\documents\visual studio 2017\Projects\Bordone.Geronimo.TP4.2D\MainCorreo\obj\Debug\MainCorreo.Properties.Resources.resources
+c:\users\admin\documents\visual studio 2017\Projects\Bordone.Geronimo.TP4.2D\MainCorreo\obj\Debug\MainCorreo.csproj.GenerateResource.Cache
+c:\users\admin\documents\visual studio 2017\Projects\Bordone.Geronimo.TP4.2D\MainCorreo\obj\Debug\MainCorreo.exe
+c:\users\admin\documents\visual studio 2017\Projects\Bordone.Geronimo.TP4.2D\MainCorreo\obj\Debug\MainCorreo.pdb
+c:\users\admin\documents\visual studio 2017\Projects\Bordone.Geronimo.TP4.2D\MainCorreo\bin\Debug\Entidades.dll
+c:\users\admin\documents\visual studio 2017\Projects\Bordone.Geronimo.TP4.2D\MainCorreo\bin\Debug\Entidades.pdb

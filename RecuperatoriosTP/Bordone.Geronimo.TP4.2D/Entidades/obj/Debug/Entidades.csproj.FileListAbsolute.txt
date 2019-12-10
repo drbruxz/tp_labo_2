@@ -1,0 +1,5 @@
+c:\users\admin\documents\visual studio 2017\Projects\Bordone.Geronimo.TP4.2D\Entidades\bin\Debug\Entidades.dll
+c:\users\admin\documents\visual studio 2017\Projects\Bordone.Geronimo.TP4.2D\Entidades\bin\Debug\Entidades.pdb
+c:\users\admin\documents\visual studio 2017\Projects\Bordone.Geronimo.TP4.2D\Entidades\obj\Debug\Entidades.dll
+c:\users\admin\documents\visual studio 2017\Projects\Bordone.Geronimo.TP4.2D\Entidades\obj\Debug\Entidades.pdb
+c:\users\admin\documents\visual studio 2017\Projects\Bordone.Geronimo.TP4.2D\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache

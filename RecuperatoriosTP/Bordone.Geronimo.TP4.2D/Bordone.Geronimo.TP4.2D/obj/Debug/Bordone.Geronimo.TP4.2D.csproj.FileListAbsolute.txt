@@ -1,0 +1,7 @@
+c:\users\admin\documents\visual studio 2017\Projects\Bordone.Geronimo.TP4.2D\Bordone.Geronimo.TP4.2D\bin\Debug\Bordone.Geronimo.TP4.2D.exe.config
+c:\users\admin\documents\visual studio 2017\Projects\Bordone.Geronimo.TP4.2D\Bordone.Geronimo.TP4.2D\bin\Debug\Bordone.Geronimo.TP4.2D.exe
+c:\users\admin\documents\visual studio 2017\Projects\Bordone.Geronimo.TP4.2D\Bordone.Geronimo.TP4.2D\bin\Debug\Bordone.Geronimo.TP4.2D.pdb
+c:\users\admin\documents\visual studio 2017\Projects\Bordone.Geronimo.TP4.2D\Bordone.Geronimo.TP4.2D\obj\Debug\Bordone.Geronimo.TP4._2D.Properties.Resources.resources
+c:\users\admin\documents\visual studio 2017\Projects\Bordone.Geronimo.TP4.2D\Bordone.Geronimo.TP4.2D\obj\Debug\Bordone.Geronimo.TP4.2D.csproj.GenerateResource.Cache
+c:\users\admin\documents\visual studio 2017\Projects\Bordone.Geronimo.TP4.2D\Bordone.Geronimo.TP4.2D\obj\Debug\Bordone.Geronimo.TP4.2D.exe
+c:\users\admin\documents\visual studio 2017\Projects\Bordone.Geronimo.TP4.2D\Bordone.Geronimo.TP4.2D\obj\Debug\Bordone.Geronimo.TP4.2D.pdb
