@@ -54,10 +54,16 @@ namespace Entidades
             }
             c.paquetes.Add(p);
 
-            Thread hiloPaquete = new Thread(p.MockCicloDeVida);
-            c.mockPaquetes.Add(hiloPaquete);
-            hiloPaquete.Start();
-            
+            Thread hiloPaquete;
+            try
+            { 
+                hiloPaquete = new Thread(p.MockCicloDeVida);
+                c.mockPaquetes.Add(hiloPaquete);
+                hiloPaquete.Start();
+            }catch
+            {
+                throw;
+            }
             return c;
         }
         #endregion

@@ -46,7 +46,8 @@ namespace Entidades
             }
             catch(Exception ex)
             {
-                throw new Exception("Error en la carga de base de datos");
+                ex = new Exception("Error en la carga de base de datos", ex);
+                throw ex;
             }
             finally
             {

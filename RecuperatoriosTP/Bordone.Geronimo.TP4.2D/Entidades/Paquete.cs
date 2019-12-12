@@ -108,10 +108,15 @@ namespace Entidades
 
                 this.InformarEstado.Invoke(this, EventArgs.Empty);
             }
-
-            PaqueteDAO.Insertar(this);
-
+            try
+            { 
+                PaqueteDAO.Insertar(this);
             }
+            catch
+            {
+                throw;
+            }
+        }
         #endregion
 
         #region Operadores

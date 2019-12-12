@@ -46,7 +46,7 @@ namespace MainCorreo
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.ToString());
+                MessageBox.Show(ex.ToString() + "\nExcepcion interna: " + ex.InnerException.ToString());
             }
         }
 
@@ -127,7 +127,7 @@ namespace MainCorreo
 
             }catch(Exception ex)
             {
-                MessageBox.Show(ex.ToString());
+                MessageBox.Show(ex.ToString() + "\nExcepcion interna: " + ex.InnerException.ToString());
             }
         }
 
