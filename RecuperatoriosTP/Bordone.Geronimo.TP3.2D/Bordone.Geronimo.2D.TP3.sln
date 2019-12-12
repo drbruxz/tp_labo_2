@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Clases Instanciables", "Cla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Excepciones", "Excepciones\Excepciones.csproj", "{32A24838-D234-4FAD-8AC8-DF21DAAE4D45}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestsUnitarios", "TestsUnitarios\TestsUnitarios.csproj", "{0B4ACCF3-B286-4DC3-BACD-B81F7C7D1008}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{32A24838-D234-4FAD-8AC8-DF21DAAE4D45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{32A24838-D234-4FAD-8AC8-DF21DAAE4D45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{32A24838-D234-4FAD-8AC8-DF21DAAE4D45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B4ACCF3-B286-4DC3-BACD-B81F7C7D1008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B4ACCF3-B286-4DC3-BACD-B81F7C7D1008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B4ACCF3-B286-4DC3-BACD-B81F7C7D1008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B4ACCF3-B286-4DC3-BACD-B81F7C7D1008}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

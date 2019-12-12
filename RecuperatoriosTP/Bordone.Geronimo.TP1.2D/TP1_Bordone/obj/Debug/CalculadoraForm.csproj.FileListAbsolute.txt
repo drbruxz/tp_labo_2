@@ -1,0 +1,11 @@
+C:\Users\admin\Desktop\Geronimo\Bordone.Geronimo.TP1.2D\TP1_Bordone\bin\Debug\TP1_Bordone.exe.config
+C:\Users\admin\Desktop\Geronimo\Bordone.Geronimo.TP1.2D\TP1_Bordone\bin\Debug\TP1_Bordone.exe
+C:\Users\admin\Desktop\Geronimo\Bordone.Geronimo.TP1.2D\TP1_Bordone\bin\Debug\TP1_Bordone.pdb
+C:\Users\admin\Desktop\Geronimo\Bordone.Geronimo.TP1.2D\TP1_Bordone\bin\Debug\Entidades.dll
+C:\Users\admin\Desktop\Geronimo\Bordone.Geronimo.TP1.2D\TP1_Bordone\bin\Debug\Entidades.pdb
+C:\Users\admin\Desktop\Geronimo\Bordone.Geronimo.TP1.2D\TP1_Bordone\obj\Debug\CalculadoraForm.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\Geronimo\Bordone.Geronimo.TP1.2D\TP1_Bordone\obj\Debug\TP1_Bordone.FormCalculadora.resources
+C:\Users\admin\Desktop\Geronimo\Bordone.Geronimo.TP1.2D\TP1_Bordone\obj\Debug\TP1_Bordone.Properties.Resources.resources
+C:\Users\admin\Desktop\Geronimo\Bordone.Geronimo.TP1.2D\TP1_Bordone\obj\Debug\CalculadoraForm.csproj.GenerateResource.Cache
+C:\Users\admin\Desktop\Geronimo\Bordone.Geronimo.TP1.2D\TP1_Bordone\obj\Debug\TP1_Bordone.exe
+C:\Users\admin\Desktop\Geronimo\Bordone.Geronimo.TP1.2D\TP1_Bordone\obj\Debug\TP1_Bordone.pdb

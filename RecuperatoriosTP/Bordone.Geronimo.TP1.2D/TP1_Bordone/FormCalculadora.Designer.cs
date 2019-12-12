@@ -46,7 +46,6 @@
             this.txtNum1.Name = "txtNum1";
             this.txtNum1.Size = new System.Drawing.Size(130, 50);
             this.txtNum1.TabIndex = 0;
-            this.txtNum1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // txtNum2
             // 
@@ -55,7 +54,6 @@
             this.txtNum2.Name = "txtNum2";
             this.txtNum2.Size = new System.Drawing.Size(130, 50);
             this.txtNum2.TabIndex = 2;
-            this.txtNum2.TextChanged += new System.EventHandler(this.txtNum2_TextChanged);
             // 
             // boxOperador
             // 
@@ -71,7 +69,6 @@
             this.boxOperador.Size = new System.Drawing.Size(121, 50);
             this.boxOperador.Sorted = true;
             this.boxOperador.TabIndex = 1;
-            this.boxOperador.SelectedIndexChanged += new System.EventHandler(this.boxOperador_SelectedIndexChanged);
             // 
             // btnOperar
             // 
@@ -137,7 +134,6 @@
             this.txtResultado.Size = new System.Drawing.Size(30, 31);
             this.txtResultado.TabIndex = 8;
             this.txtResultado.Text = "0";
-            this.txtResultado.Click += new System.EventHandler(this.txtResultado_Click);
             // 
             // FormCalculadora
             // 

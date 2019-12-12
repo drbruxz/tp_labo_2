@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "TP1_Bordone\Entidades.csproj", "{D219F4F7-33E1-4E0E-A997-F75C9E898516}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculadoraForm", "TP1_Bordone\CalculadoraForm.csproj", "{D219F4F7-33E1-4E0E-A997-F75C9E898516}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entidades", "Entidades\Entidades.csproj", "{2AC88B42-CC41-49FE-AF8E-39DA8C16ACE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{D219F4F7-33E1-4E0E-A997-F75C9E898516}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D219F4F7-33E1-4E0E-A997-F75C9E898516}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D219F4F7-33E1-4E0E-A997-F75C9E898516}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AC88B42-CC41-49FE-AF8E-39DA8C16ACE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AC88B42-CC41-49FE-AF8E-39DA8C16ACE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AC88B42-CC41-49FE-AF8E-39DA8C16ACE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AC88B42-CC41-49FE-AF8E-39DA8C16ACE3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

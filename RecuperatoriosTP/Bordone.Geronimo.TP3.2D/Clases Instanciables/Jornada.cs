@@ -67,6 +67,13 @@ namespace Clases_Instanciables
 #endregion
 
         #region Operadores
+
+        /// <summary>
+        /// Si el alumno esta en la lista de alumnos de la jornada el operador == retornará true
+        /// </summary>
+        /// <param name="j"></param>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static bool operator ==(Jornada j, Alumno a)
         {
             bool returnValue = false;
@@ -85,6 +92,12 @@ namespace Clases_Instanciables
             return !(j == a);
         }
 
+        /// <summary>
+        /// Agrega un alumno a la lista de alumnos de una jornada si no está previamente incluido en ella (!=)
+        /// </summary>
+        /// <param name="j"></param>
+        /// <param name="a"></param>
+        /// <returns></returns>
         public static Jornada operator +(Jornada j, Alumno a)
         {
             if (j != a)
@@ -107,7 +120,11 @@ namespace Clases_Instanciables
             return sb.ToString();
         }
 
-
+        /// <summary>
+        /// Guarda los datos de la jornada en un archivo txt titulado Jornada. El texto sera el valor devuelto por el ToString
+        /// </summary>
+        /// <param name="jornada"></param>
+        /// <returns></returns>
         public static bool Guardar(Jornada jornada)
         {
             Texto.Guardar("Jornada.txt", jornada.ToString());

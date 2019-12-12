@@ -13,22 +13,45 @@ namespace Archivos
     {
         public bool Guardar(string archivo, T datos)
         {
-            XmlSerializer serializer = new XmlSerializer(typeof(T));
+            bool returnValue = false;
             TextWriter writer = new StreamWriter(archivo);
-            serializer.Serialize(writer, datos);
-            writer.Close();
-            return true;
+            XmlSerializer serializer = new XmlSerializer(typeof(T));
+            try
+             {
+
+                serializer.Serialize(writer, datos);
+                returnValue = true;
+            }catch(Exception ex)
+            {
+                Console.WriteLine("Excepcion encontrada: " + ex.ToString());
+            }
+            finally 
+            { 
+                writer.Close();
+            }
+            return returnValue;
         }
 
         public bool Leer(string archivo, out T datos)
         {
-            XmlTextReader reader;
-            XmlSerializer ser;
-            reader = new XmlTextReader(archivo);
-            ser =  new XmlSerializer(typeof(T));
-            datos = (T)ser.Deserialize(reader);
-            reader.Close();
-            return true;
+            XmlTextReader reader = new XmlTextReader(archivo);
+            XmlSerializer ser = new XmlSerializer(typeof(T));
+            bool returnValue = false;
+            try
+            {
+                datos = (T)ser.Deserialize(reader);
+                returnValue = true;
+            }catch(Exception ex)
+            {
+                Console.WriteLine("Excepcion encontrada: " + ex.ToString());
+                datos = default(T);
+            }
+            finally
+            {
+                reader.Close();
+            }
+            
+            return returnValue;
         }
     }
 }

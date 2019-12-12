@@ -1,0 +1,5 @@
+C:\Users\admin\Desktop\Geronimo\Bordone.Geronimo.TP1.2D\Entidades\bin\Debug\Entidades.dll
+C:\Users\admin\Desktop\Geronimo\Bordone.Geronimo.TP1.2D\Entidades\bin\Debug\Entidades.pdb
+C:\Users\admin\Desktop\Geronimo\Bordone.Geronimo.TP1.2D\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\Geronimo\Bordone.Geronimo.TP1.2D\Entidades\obj\Debug\Entidades.dll
+C:\Users\admin\Desktop\Geronimo\Bordone.Geronimo.TP1.2D\Entidades\obj\Debug\Entidades.pdb

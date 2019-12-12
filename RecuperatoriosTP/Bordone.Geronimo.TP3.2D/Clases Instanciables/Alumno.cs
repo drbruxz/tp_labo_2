@@ -29,9 +29,13 @@ namespace Clases_Instanciables
         {
             this.estadoCuenta = estadoCuenta;
         }
-#endregion
+        #endregion
 
         #region Metodos
+        /// <summary>
+        /// Sumamos al metodo mostar datos base el estado de cuenta y la clase que toma
+        /// </summary>
+        /// <returns></returns>
         protected override string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();
@@ -54,6 +58,13 @@ namespace Clases_Instanciables
         #endregion
 
         #region Operadores
+
+        /// <summary>
+        /// Un alumno es igual a una clase si toma esa clase y no es un deudor
+        /// </summary>
+        /// <param name="a"></param>
+        /// <param name="c"></param>
+        /// <returns></returns>
         public static bool operator ==(Alumno a, Universidad.EClases c)
         {
             bool returnValue = false;

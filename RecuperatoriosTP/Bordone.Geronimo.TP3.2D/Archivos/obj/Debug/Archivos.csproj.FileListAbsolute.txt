@@ -3,3 +3,8 @@ C:\Users\admin\Documents\Visual Studio 2017\Projects\Bordone.Geronimo.2D.TP3\Arc
 C:\Users\admin\Documents\Visual Studio 2017\Projects\Bordone.Geronimo.2D.TP3\Archivos\obj\Debug\Archivos.csprojResolveAssemblyReference.cache
 C:\Users\admin\Documents\Visual Studio 2017\Projects\Bordone.Geronimo.2D.TP3\Archivos\obj\Debug\Archivos.dll
 C:\Users\admin\Documents\Visual Studio 2017\Projects\Bordone.Geronimo.2D.TP3\Archivos\obj\Debug\Archivos.pdb
+C:\Users\admin\Desktop\Geronimo\Ejercitacion Programacion\Bordone.Geronimo.TP3.2D\Archivos\bin\Debug\Archivos.dll
+C:\Users\admin\Desktop\Geronimo\Ejercitacion Programacion\Bordone.Geronimo.TP3.2D\Archivos\bin\Debug\Archivos.pdb
+C:\Users\admin\Desktop\Geronimo\Ejercitacion Programacion\Bordone.Geronimo.TP3.2D\Archivos\obj\Debug\Archivos.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\Geronimo\Ejercitacion Programacion\Bordone.Geronimo.TP3.2D\Archivos\obj\Debug\Archivos.dll
+C:\Users\admin\Desktop\Geronimo\Ejercitacion Programacion\Bordone.Geronimo.TP3.2D\Archivos\obj\Debug\Archivos.pdb

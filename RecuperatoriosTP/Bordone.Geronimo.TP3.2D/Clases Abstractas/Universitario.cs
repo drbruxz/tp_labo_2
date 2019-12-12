@@ -25,6 +25,12 @@ namespace Clases_Abstractas
 
         #region Operadores
         
+        /// <summary>
+        /// Un universitario sera igual a otro si sus legajos o sus DNI coinciden, verificando previamente que sean ambos, también, del mismo tipo.
+        /// </summary>
+        /// <param name="pg1"></param>
+        /// <param name="pg2"></param>
+        /// <returns></returns>
         public static bool operator ==(Universitario pg1, Universitario pg2)
         {
             bool returnValue = false;

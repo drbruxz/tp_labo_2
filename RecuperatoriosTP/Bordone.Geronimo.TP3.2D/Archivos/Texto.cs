@@ -12,18 +12,46 @@ namespace Archivos
     {
         public static bool Guardar(string archivo, string datos)
         {
-            StreamWriter sw = new StreamWriter(archivo);
-            sw.WriteLine(datos);
-            sw.Close();
+            bool returnValue = false;
+            bool append = (File.Exists(archivo));
+            StreamWriter sw = new StreamWriter(archivo, append);
+            try {
 
-            return true;
+                sw.WriteLine(datos);
+                returnValue = true;
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Excepcion encontrada: " + ex.ToString());
+            }
+            finally
+            {
+                if(returnValue ==true)
+                    sw.Close();
+            }
+            return returnValue;
         }
 
         public static bool Leer(string archivo, out string datos)
         {
             StreamReader sr = new StreamReader(archivo);
-            datos = sr.ReadToEnd();
-            return true;
+            bool returnValue = false;
+            try
+            { 
+                datos = sr.ReadToEnd();
+                returnValue = true;
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine("Excepcion hallada: " + ex.ToString());
+                datos = null;
+            }
+            finally
+            {
+                sr.Close();
+            }
+
+            return returnValue;
         }
     }
 }

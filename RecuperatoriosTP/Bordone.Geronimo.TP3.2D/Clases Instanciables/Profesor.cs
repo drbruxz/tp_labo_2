@@ -34,7 +34,12 @@ namespace Clases_Instanciables
 #endregion
 
         #region Operadores
-
+        /// <summary>
+        /// Un profesor sera igual a una clase si esa esta en su lista de clases del día
+        /// </summary>
+        /// <param name="p"></param>
+        /// <param name="c"></param>
+        /// <returns></returns>
         public static bool operator ==(Profesor p, Universidad.EClases c)
         {
             bool returnValue = false;
@@ -57,7 +62,6 @@ namespace Clases_Instanciables
         #region Metodos
         protected override string ParticiparEnClase()
         {
-
             StringBuilder sb = new StringBuilder();
             foreach(Universidad.EClases item in this.clasesDelDia)
             {
@@ -72,6 +76,10 @@ namespace Clases_Instanciables
             return (this.MostrarDatos() + "\n");
         }
 
+        /// <summary>
+        /// Añade a los datos base las clases en las que el docente participa
+        /// </summary>
+        /// <returns></returns>
         protected override string MostrarDatos()
         {
             StringBuilder sb = new StringBuilder();
@@ -81,6 +89,9 @@ namespace Clases_Instanciables
             return sb.ToString();
         }
 
+        /// <summary>
+        /// Generacion de clases aleatoria con random.Next, casteando el numero luego a valores del enum EClases
+        /// </summary>
         private void RandomClases()
         {
 
