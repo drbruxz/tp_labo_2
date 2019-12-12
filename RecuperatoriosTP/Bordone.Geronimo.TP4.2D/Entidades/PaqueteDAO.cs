@@ -18,6 +18,7 @@ namespace Entidades
 
         static PaqueteDAO()
         {
+            
             PaqueteDAO.conexion = new SqlConnection("Data Source=PC001\\SQLEXPRESS01;Initial Catalog=correo-sp-2017;Integrated Security=True");
             PaqueteDAO.comando = new SqlCommand();
             PaqueteDAO.comando.CommandType = System.Data.CommandType.Text;
@@ -33,17 +34,28 @@ namespace Entidades
         {
             bool returnValue = false;
             string sqlCommand;
-            sqlCommand = "INSERT INTO Paquetes (direccionEntrega, trackingID, alumno) Values(";
-            sqlCommand = sqlCommand + "'" + p.DireccionEntrega + "','" + p.TrackingID + "','" + "Geronimo Bordone" + "')";
-            PaqueteDAO.comando.CommandText = sqlCommand;
-            PaqueteDAO.conexion.Open();
-            PaqueteDAO.comando.ExecuteNonQuery();
-            returnValue = true;
+            try
+            {
+               
+                sqlCommand = "INSERT INTO Paquetes (direccionEntrega, trackingID, alumno) Values(";
+                sqlCommand = sqlCommand + "'" + p.DireccionEntrega + "','" + p.TrackingID + "','" + "Geronimo Bordone" + "')";
+                PaqueteDAO.comando.CommandText = sqlCommand;
+                PaqueteDAO.conexion.Open();
+                PaqueteDAO.comando.ExecuteNonQuery();
+                returnValue = true;
+            }
+            catch(Exception ex)
+            {
+                throw new Exception("Error en la carga de base de datos");
+            }
+            finally
+            {
+                PaqueteDAO.conexion.Close();
+            }
 
-            PaqueteDAO.conexion.Close();
             return returnValue;
         }
-        //NOTA: Las excepciones son manejadas adentro sino que serán atrapadas en el primer llamado que deriva en Insertar: En el proyecto de Forms.
+        //NOTA: La excepción será atrapada en el primer llamado que deriva en Insertar: En el proyecto de Forms.
 
     }
 }
