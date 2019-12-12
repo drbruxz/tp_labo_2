@@ -3,3 +3,8 @@ c:\users\admin\documents\visual studio 2017\Projects\Bordone.Geronimo.TP4.2D\Ent
 c:\users\admin\documents\visual studio 2017\Projects\Bordone.Geronimo.TP4.2D\Entidades\obj\Debug\Entidades.dll
 c:\users\admin\documents\visual studio 2017\Projects\Bordone.Geronimo.TP4.2D\Entidades\obj\Debug\Entidades.pdb
 c:\users\admin\documents\visual studio 2017\Projects\Bordone.Geronimo.TP4.2D\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\Geronimo\Ejercitacion Programacion\Bordone.Geronimo.TP4.2D\Entidades\bin\Debug\Entidades.dll
+C:\Users\admin\Desktop\Geronimo\Ejercitacion Programacion\Bordone.Geronimo.TP4.2D\Entidades\bin\Debug\Entidades.pdb
+C:\Users\admin\Desktop\Geronimo\Ejercitacion Programacion\Bordone.Geronimo.TP4.2D\Entidades\obj\Debug\Entidades.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\Geronimo\Ejercitacion Programacion\Bordone.Geronimo.TP4.2D\Entidades\obj\Debug\Entidades.dll
+C:\Users\admin\Desktop\Geronimo\Ejercitacion Programacion\Bordone.Geronimo.TP4.2D\Entidades\obj\Debug\Entidades.pdb

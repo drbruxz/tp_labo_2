@@ -21,13 +21,21 @@ namespace MainCorreo
             InitializeComponent();
         }
 
+
         private void Form1_Load(object sender, EventArgs e)
         {
             correo = new Correo();
-            
 
         }
 
+        /// <summary>
+        /// Crea un nuevo paquete usando los datos ingresados.
+        /// Suma paq_InformaEstado como manejador del evento InformarEstado del paquete.
+        /// Intenta añadir el paquete al correo, manejando cualquier excepción posible.
+        /// Llama a la funcion ActualizarEstados
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnAgregar_Click(object sender, EventArgs e)
         {
             Paquete paq = new Paquete(txtDireccion.Text,mskIdText.Text);
@@ -40,10 +48,13 @@ namespace MainCorreo
             {
                 MessageBox.Show(ex.ToString());
             }
-
-            this.ActualizarEstados();
         }
 
+        /// <summary>
+        /// Se invoca a su mismo hasta que deje de ser necesario. Luego 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void paq_InformaEstado(object sender, EventArgs e)
         {
             if (this.InvokeRequired)
@@ -58,6 +69,10 @@ namespace MainCorreo
 
         }
 
+        /// <summary>
+        /// Limpia todos los controles del groupbox1 del tipo ListBox.
+        /// Ingresa los paquetes al listbox adecuado a su paquete.
+        /// </summary>
         private void ActualizarEstados()
         {
             foreach(Control item in groupBox1.Controls)
@@ -85,21 +100,17 @@ namespace MainCorreo
             }
         }
 
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         private void btnMostrarTodos_Click(object sender, EventArgs e)
         {
             this.MostrarInformacion<List<Paquete>>((IMostrar<List<Paquete>>)correo);
         }
 
+        /// <summary>
+        /// Implemente el metodo mostrar datos del elemento que implemente la interface IMostrar (verificando previamente que no sea null)
+        /// Lo guarda en un archivo txt con el nombre Backup, manejando cualquier excepcion posible.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="elemento"></param>
         private void MostrarInformacion<T>(IMostrar<T> elemento)
         {
             
@@ -126,11 +137,6 @@ namespace MainCorreo
             {
                 this.MostrarInformacion<Paquete>((IMostrar<Paquete>)lstEntregado.SelectedItem);
             }
-        }
-
-        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
-        {
-
         }
 
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)

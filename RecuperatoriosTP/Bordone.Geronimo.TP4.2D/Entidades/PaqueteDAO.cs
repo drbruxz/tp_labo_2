@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
+using System.Windows;
 
 namespace Entidades
 {
@@ -12,6 +13,8 @@ namespace Entidades
     {
         private static SqlConnection conexion;
         private static SqlCommand comando;
+
+        
 
         static PaqueteDAO()
         {
@@ -21,10 +24,14 @@ namespace Entidades
             PaqueteDAO.comando.Connection = PaqueteDAO.conexion;
         }
 
+        /// <summary>
+        /// Inserta el paquete en la base de datos.
+        /// </summary>
+        /// <param name="p"></param>
+        /// <returns></returns>
         public static bool Insertar(Paquete p)
         {
             bool returnValue = false;
-
             string sqlCommand;
             sqlCommand = "INSERT INTO Paquetes (direccionEntrega, trackingID, alumno) Values(";
             sqlCommand = sqlCommand + "'" + p.DireccionEntrega + "','" + p.TrackingID + "','" + "Geronimo Bordone" + "')";
@@ -36,6 +43,7 @@ namespace Entidades
             PaqueteDAO.conexion.Close();
             return returnValue;
         }
+        //NOTA: Las excepciones son manejadas adentro sino que serán atrapadas en el primer llamado que deriva en Insertar: En el proyecto de Forms.
 
     }
 }
