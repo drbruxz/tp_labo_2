@@ -48,6 +48,9 @@ namespace Entidades
                 trackingID = value;
             }
         }
+
+        public event DelegadoException EventoException; 
+        
         #endregion
         
         public Paquete(string direccion, string trackingID)
@@ -108,14 +111,7 @@ namespace Entidades
 
                 this.InformarEstado.Invoke(this, EventArgs.Empty);
             }
-            try
-            { 
                 PaqueteDAO.Insertar(this);
-            }
-            catch
-            {
-                throw;
-            }
         }
         #endregion
 
@@ -140,7 +136,7 @@ namespace Entidades
 #endregion
     }
 
-   
+    public delegate void DelegadoException(Exception ex);
 
     public enum EEstado
     {

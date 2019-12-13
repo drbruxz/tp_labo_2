@@ -26,17 +26,30 @@ namespace Entidades
             ///La ruta es el escritorio.- Ruta final es la combinacion de la ruta con el nombre del archivo.
             string ruta = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
             string rutaFinal = Path.Combine(ruta, archivo);
+            StreamWriter sw = new StreamWriter(rutaFinal, checkFileExistence);
 
             if (File.Exists(rutaFinal))
                 checkFileExistence = true;
-
-            StreamWriter sw = new StreamWriter(rutaFinal, checkFileExistence);
-            sw.WriteLine(texto);
-            sw.Close();
+            try
+            { 
+                sw.WriteLine(texto);
+            }
+            catch(Exception ex)
+            {
+                ex = new Exception("Error en el guardado de Texto: ", ex);
+                EventoExcepcion.Invoke(ex);
+            }
+            finally
+            {
+                if(returnValue == true)
+                    sw.Close();
+            }
+            
             returnValue = true;
-
+            
             return returnValue;
         }
 
+        public static DelegadoException EventoExcepcion;
     }
 }

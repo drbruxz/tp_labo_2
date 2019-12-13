@@ -25,6 +25,7 @@ namespace MainCorreo
         private void Form1_Load(object sender, EventArgs e)
         {
             correo = new Correo();
+            PaqueteDAO.EventoException += MostrarExcepcion;
 
         }
 
@@ -40,14 +41,9 @@ namespace MainCorreo
         {
             Paquete paq = new Paquete(txtDireccion.Text,mskIdText.Text);
             paq.InformarEstado += paq_InformaEstado;
-            try
-            {
-                correo += paq;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.ToString() + "\nExcepcion interna: " + ex.InnerException.ToString());
-            }
+
+            correo += paq;
+            
         }
 
         /// <summary>
@@ -121,24 +117,22 @@ namespace MainCorreo
                 txtMostrar.Text = elemento.MostrarDatos(elemento);
                 guardar = elemento.MostrarDatos(elemento);
             }
-            try
-            {
+                
                 guardar.Guardar("Backup.txt");
-
-            }catch(Exception ex)
-            {
-                MessageBox.Show(ex.ToString() + "\nExcepcion interna: " + ex.InnerException.ToString());
-            }
         }
 
         private void menMostrar_Click(object sender, EventArgs e)
         {
             if(this.lstEntregado.SelectedIndex != -1)
             {
-                this.MostrarInformacion<Paquete>((IMostrar<Paquete>)lstEntregado.SelectedItem);
+                    this.MostrarInformacion<Paquete>((IMostrar<Paquete>)lstEntregado.SelectedItem);
             }
         }
 
+        public void MostrarExcepcion(Exception ex)
+        {
+            MessageBox.Show(ex.Message + "Datos completos de excepcion interna:\n\n" + ex.InnerException.ToString());
+        }
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             correo.FinEntregas();

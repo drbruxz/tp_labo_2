@@ -46,8 +46,8 @@ namespace Entidades
             }
             catch(Exception ex)
             {
-                ex = new Exception("Error en la carga de base de datos", ex);
-                throw ex;
+                ex = new Exception("Error en la carga de base de datos\n", ex);
+                EventoException.Invoke(ex);
             }
             finally
             {
@@ -56,7 +56,9 @@ namespace Entidades
 
             return returnValue;
         }
-        //NOTA: La excepción será atrapada en el primer llamado que deriva en Insertar: En el proyecto de Forms.
+
+        public static DelegadoException EventoException;
+        //NOTA: La excepción será atrapada por el formulario.
 
     }
 }
