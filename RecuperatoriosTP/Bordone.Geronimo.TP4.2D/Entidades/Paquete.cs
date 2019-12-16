@@ -130,12 +130,24 @@ namespace Entidades
             return !(p1 == p2);
         }
 
+        /// <summary>
+        /// DELEGADO ESTADO EVENTO
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         public delegate void DelegadoEstado(object sender, EventArgs e);
 
+        /// <summary>
+        /// EVENTO INFORMAR ESTADO
+        /// </summary>
         public event DelegadoEstado InformarEstado;
 #endregion
     }
 
+    /// <summary>
+    /// DELEGADO EXCEPCTION
+    /// </summary>
+    /// <param name="ex"></param>
     public delegate void DelegadoException(Exception ex);
 
     public enum EEstado
